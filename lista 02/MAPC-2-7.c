@@ -2,13 +2,23 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int main(){
+int main()
+{
     setlocale(LC_ALL, "");
-    int a = 0, b = 1, aux = 0;
-    for (int i = 0; i < 10; i++)
+    int a = 0, b = 0, aux = 0;
+    int x, y;
+    printf("Os 10 primeiros números da sequência de Fibonacci são: ");
+    x = 0;
+    y = 1;
+    printf("%d ", x);
+    printf("%d ", y);
+    for (int i = 0; i < 8; i++)
     {
-        /* code */
+        aux = x + y;
+        printf("%d ", aux);
+        x = y;
+        y = aux;
     }
-    
+    printf("\n");
     return 0;
 }
