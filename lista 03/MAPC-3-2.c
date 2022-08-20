@@ -13,9 +13,12 @@ int main(){
     printf("\nNomes digitados: \n");
     for (int i = 0; i < 10; i++)
     {
-        printf("");
+        printf("%s", nome[i]);
     }
-    
-    
+    printf("\nNomes digitados na ordem inversa: \n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%s", nome[9-i]);
+    }
     return 0;
 }
