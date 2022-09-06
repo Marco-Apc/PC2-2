@@ -4,9 +4,9 @@
 
 void trocaValores(int *A, int *B){
     int aux = 0;
-    aux = A;
-    A = B;
-    B = aux;
+    aux = *A;
+    *A = *B;
+    *B = aux;
 }
 
 int main(){
@@ -14,16 +14,16 @@ int main(){
     int *A = malloc(sizeof(int));
     int *B = malloc(sizeof(int));
 
-    printf("Digite a primeira frase: ");
+    printf("Digite o primeiro algarismo: ");
     scanf("%d%*c", A);
-    printf("Digite a segunda frase: ");
+    printf("Digite o segundo algarismo: ");
     scanf("%d%*c", B);
 
     trocaValores(A, B);
 
-    printf("Frases \"trocadas\":\n");
-    printf("%s\n", A);
-    printf("%s\n", B);
+    printf("Algarismos \"trocados\":\n");
+    printf("%d\n", *A);
+    printf("%d\n", *B);
 
     free(A);
     free(B);
