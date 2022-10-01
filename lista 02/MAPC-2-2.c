@@ -4,9 +4,9 @@
 
 int main()
 {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "Portuguese");
     int aux = 0;
-    printf("Digite o número do dia da semana (de 1 a 7): ");
+    printf("Digite o numero do dia da semana (de 1 a 7) e precione Enter: ");
     scanf("%d", &aux);
     switch (aux)
     {
@@ -17,7 +17,7 @@ int main()
         printf("\nSegunda feira.\n");
         break;
     case 3:
-        printf("\nTerça feira.\n");
+        printf("\nTerca feira.\n");
         break;
     case 4:
         printf("\nQuarta feira.\n");
@@ -29,10 +29,11 @@ int main()
         printf("\nSexta feira.\n");
         break;
     case 7:
-        printf("\nSábado.\n");
+        printf("\nSabado.\n");
         break;
     default:
-        printf("\nDia da semana não encontrado.\n");
+        printf("\nDia da semana nao encontrado.\n");
     }
+    system("pause");
     return 0;
 }

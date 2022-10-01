@@ -8,3 +8,7 @@
 *.zip
 *.rar
 *.gz
+
+## Arquivos Comuns
+
+*.txt
