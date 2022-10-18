@@ -161,9 +161,9 @@ int main(void)
                     printf("Valor invalido! Digite novamente: ");
             } while ((pkm + aux)->atributos.speed < 1 || (pkm + aux)->atributos.speed > 10);
 
-            pkm->tm = *localtime(&data);
+            (pkm + aux)->tm = *localtime(&data);
             // escrever no arquivo o pokemon cadastrado
-            escrever_arquivo(pkm);
+            escrever_arquivo((pkm + aux));
             aux++;
 
             break;
