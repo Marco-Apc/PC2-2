@@ -11,7 +11,6 @@ typedef struct
 
 void iniciar(Fila *fila)
 {
-
     fila->primeiro = 0;
     fila->ultimo = -1;
 }
@@ -39,6 +38,18 @@ void desenfileirar(Fila *fila)
         printf("Erro, fila vazia!\n");
 }
 
+void mostraFila(Fila *fila)
+{
+    if (fila->ultimo <= -1)
+        printf("Fila vazia!\n");
+    else
+    {
+        printf("Itens da fila: ");
+        for (int i = fila->primeiro; i <= fila->ultimo; i++)
+            printf("%d ", fila->itens[i]);
+    }
+}
+
 void tamanho(Fila *fila)
 {
     printf("\nO tamanho da fila eh %d\n", (fila->ultimo - fila->primeiro) + 1);
@@ -62,6 +73,7 @@ int main()
         printf("1: Enfileirar\n");
         printf("2: Desenfileirar\n");
         printf("3: Tamanho\n");
+        printf("4: Itens\n");
 
         scanf("%d", &opcao);
 
@@ -82,6 +94,10 @@ int main()
 
         case 3:
             tamanho(&fila);
+            break;
+
+        case 4:
+            mostraFila(&fila);
             break;
 
         case 0:
