@@ -1,3 +1,7 @@
+// GRUPO
+// Marco Antônio Pires de Carvalho
+// Gabriel Leal de Oliveira
+// Marcelo Augusto Paixão Silva
 #include <stdio.h>
 #include <stdlib.h>
 
