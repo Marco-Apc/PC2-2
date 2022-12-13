@@ -12,3 +12,7 @@
 ## Arquivos Comuns
 
 *.txt
+
+## A Danada da Pasta .vscode
+
+.vscode
